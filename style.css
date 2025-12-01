@@ -216,17 +216,18 @@ header {
 }
 
 .home-box .paddle img {
-    width: 90%;
+    width: 70%;
+    margin-left: 12%;
     height: auto;
     display: block;
 }
 
 .left-paddle:hover {
-    transform: rotate(-15deg) scale(1.1);
+    transform: rotate(-10deg) scale(1.1);
 }
 
 .right-paddle:hover {
-    transform: rotate(15deg) scale(1.1);
+    transform: rotate(10deg) scale(1.1);
 }
 
 main section {
@@ -387,5 +388,6 @@ main section {
         font-size: clamp(0.75rem, 3vw, 0.95rem);
     }
  }
+
 
 
