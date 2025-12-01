@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="Background">
+
+<header class="header-strip">
+<nav class="whole">
+    <div class="nav-group left-group">
+        <a href="about.html" class="nav">ABOUT</a>
+        <a href="offers.html" class="nav">OFFERS</a>
+    </div>
+
+    <div class="nav-logo">
+        <img src="images/word logo.webp" alt="Company Logo" id="navlogo">
+    </div>
+
+    <div class="nav-group right-group">
+        <a href="index.html" class="nav">HOME</a>
+        <a href="contact.html" class="nav">CONTACT</a>
+    </div>
+</nav>
+</header>
+
+<section class="top-images">
+    <figure class="contact">
+        <a href="https://www.facebook.com/share/1FidZr18Zc/?mibextid=wwXIfr" target="_blank">
+            <img src="images/contact.webp" alt="Contact Header Image">
+        </a>
+    </figure>
+
+    <figure class="feedback">
+        <img src="images/feedback.webp" alt="Feedback Information Image">
+    </figure>
+</section>
+
+<section class="form-section">
+    <div class="form-container">
+        <form id="contactForm">
+
+            <label for="name">Full Name</label><br>
+            <input type="text" id="name" name="name" placeholder="Juan Dela Cruz" required>
+            <small class="error"></small><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="JuanDelaCruz@email.com" required>
+            <small class="error"></small><br>
+
+            <label for="phone">Phone Number</label><br>
+            <input type="number" id="phone" name="phone" placeholder="09123456789" required>
+            <small class="error"></small><br>
+
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" placeholder="Tell us what you think..." required></textarea>
+            <small class="error"></small><br>
+
+            <button type="submit" class="submit-btn centered-btn">SUBMIT</button>
+
+        </form>
+    </div>
+</section>
+
+<script type="module" src="script.js" defer></script>
+
+</div>
+</body>
+</html>

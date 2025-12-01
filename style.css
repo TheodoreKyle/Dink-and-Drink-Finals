@@ -1,0 +1,390 @@
+@font-face {
+    font-family: 'Hit and Run';
+    src: url('HitandRun-Regular.ttf');
+}
+@font-face {
+    font-family: 'Play';
+    src: url('Play-Regular.ttf');
+}
+
+.Background {
+  min-height: 100vh;               
+  background-image: url("images/bgpic.webp");
+  background-repeat: repeat-y;    
+  background-size: 100% auto;      
+  background-position: center top; 
+  margin: 0;
+  padding: 0;
+  
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-strip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    background: rgba(255,255,255,0.8);
+    padding: clamp(10px, 2.5vw, 20px) 0;
+    border-bottom: 1px solid #cacaca;
+    box-sizing: border-box;
+}
+
+nav.whole {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    gap: clamp(20px, 5vw, 60px); 
+    flex-wrap: nowrap;           
+}
+
+.nav-group {
+    display: flex;
+    gap: clamp(15px, 3vw, 40px);
+}
+
+.nav-logo img {
+    width: clamp(180px, 22vw, 220px);
+    height: auto;
+}
+
+.nav {
+    font-family: 'Hit and Run';
+    font-size: clamp(1rem, 1.8vw, 1.8rem);
+    color: black;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top-images {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.top-images figure {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.top-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.form-container {
+    font-family: 'Play', sans-serif;
+    position: relative; 
+    width: 90%;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #ffffff;
+    box-sizing: border-box;
+    text-align: left;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.form-container label {
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    font-weight: 500;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.form-container textarea {
+    height: 200px;
+}
+
+.submit-btn {
+    width: 50%;
+    max-width: 220px;
+    padding: 15px 25px;
+    font-family: 'Hit and Run';
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 25px auto 0 auto;
+    transition: background-color 0.3s;
+}
+
+.centered-btn {
+    display: block;
+    margin: 25px auto 0 auto;
+    width: 50%;
+    max-width: 220px;
+    padding: 15px 25px;
+    text-align: center;
+}
+
+.submit-btn:hover {
+    background-color: #2a9dae;
+}
+
+.form-container .error {
+    display: block;
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+header {
+    display: grid;
+    place-items: center;
+}
+
+.success {
+    display: block;
+    color: #ffffff;
+    background-color: #2ecc71;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    text-align: center;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    transition: opacity 0.3s ease;
+}
+
+#about {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    text-align: center;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.home-title {
+    width: 100%;
+    margin-left: -25%;
+}
+
+.home-title .home-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.home-box {
+    width: 90%;
+    max-width: 1000px;
+}
+
+.home-box .home-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.home-box .paddle {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.home-box .paddle img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.left-paddle:hover {
+    transform: rotate(-15deg) scale(1.1);
+}
+
+.right-paddle:hover {
+    transform: rotate(15deg) scale(1.1);
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    gap: clamp(20px, 5vw, 50px);
+    width: 100%;
+}
+
+#logo-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    justify-content: center;
+}
+
+#rules-img {
+    width: 90%;
+    height: auto;
+    display: block;
+    transform: rotate(2deg);
+}
+
+#rent-img {
+    width: 125%;
+    margin-left: -20%;
+    height: auto;
+    display: block;
+    transform: rotate(0deg);
+}
+
+#menu-img {
+    width: 90%;
+    height: auto;
+    display: block;
+    transform: rotate(-2deg);
+}
+
+@media (max-width: 1024px) {
+    nav.whole {
+        gap: clamp(15px, 4vw, 50px);
+    }
+
+    .nav-group {
+        gap: clamp(10px, 3vw, 30px);
+    }
+
+    .nav {
+        font-size: clamp(1rem, 1.8vw, 1.7rem);
+    }
+
+    .nav-logo img {
+        width: clamp(50px, 10vw, 100px);
+    }
+    .header-strip {
+        padding: clamp(8px, 2vw, 16px) 0;
+    }
+     .form-container {
+        width: 85%;
+        padding: 30px;
+        gap: 15px;
+    }
+
+    .form-container label {
+        font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    }
+
+    .form-container input,
+    .form-container textarea {
+        padding: 12px 18px;
+        font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    }
+
+    .form-container textarea {
+        height: 180px;
+    }
+
+    .centered-btn {
+        width: 55%;
+        max-width: 200px;
+        padding: 12px 22px;
+        font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    }}
+
+@media (max-width: 768px) {
+    nav.whole {
+        gap: clamp(10px, 3vw, 40px);
+    }
+
+    .nav-group {
+        gap: clamp(8px, 2.5vw, 25px);
+    }
+
+    .nav {
+        font-size: clamp(0.8rem, 1.3vw, 1.2rem);
+    }
+
+    .nav-logo img {
+        width: clamp(40px, 20vw, 80px);
+    }
+       .header-strip {
+        padding: clamp(6px, 1.5vw, 12px) 0;
+    }
+     .form-container {
+        width: 85%;
+        padding: 30px;
+        gap: 15px;
+    }
+
+    .form-container label {
+        font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    }
+
+    .form-container input,
+    .form-container textarea {
+        padding: 12px 18px;
+        font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    }
+
+    .form-container textarea {
+        height: 180px;
+    }
+
+    .centered-btn {
+        width: 55%;
+        max-width: 200px;
+        padding: 12px 22px;
+        font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    }}
+
+@media (max-width: 480px) {
+    .form-container {
+        width: 95%;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .form-container label {
+        font-size: clamp(0.6rem, 2.3vw, 0.65rem);
+    }
+
+    .form-container input,
+    .form-container textarea {
+        padding: 8px 12px;
+        font-size: clamp(0.75rem, 3vw, 0.95rem);
+    }
+
+    .form-container textarea {
+        height: 130px;
+    }
+
+    .centered-btn {
+        width: 70%;
+        max-width: 160px;
+        padding: 8px 18px;
+        font-size: clamp(0.75rem, 3vw, 0.95rem);
+    }
+ }
+
