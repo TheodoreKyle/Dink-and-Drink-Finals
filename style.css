@@ -216,7 +216,7 @@ header {
 }
 
 .home-box .paddle img {
-    width: 100%;
+    width: 90%;
     height: auto;
     display: block;
 }
@@ -387,4 +387,5 @@ main section {
         font-size: clamp(0.75rem, 3vw, 0.95rem);
     }
  }
+
 
